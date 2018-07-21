@@ -40,7 +40,7 @@ public class SystemConfig {
 		try {
 			Properties p = new Properties();
 			InputStream is = null;
-			is = SystemConfig.class.getClassLoader().getResourceAsStream("config/config");
+			is = SystemConfig.class.getClassLoader().getResourceAsStream("system.properties");
 			p.load(is);
 			
 			FREQ = Integer.parseInt(p.getProperty("freq").trim());

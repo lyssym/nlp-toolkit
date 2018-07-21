@@ -58,7 +58,7 @@ public class CrfCWS {
 	}
  
 		
-	public static void main() {
+	public static void main(String[] args) {
 		try {
 			CRFSegmenter segmenter = new CRFSegmenter(SystemConfig.CRFCWS);
 			List<String> wordList = segmenter.segment("商品和服务");
